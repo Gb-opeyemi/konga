@@ -44,7 +44,7 @@ public class LoginTests {
         driver.findElement(By.xpath("//button[text() = 'Login']")).click();
 
         //Wait, so the next operation won't happen so fast
-        //Thread.sleep(5000);
+        Thread.sleep(5000);
 
         //Mouseover Phones and Tablet Category
         WebElement Phone = driver.findElement(By.linkText("Phones and Tablets"));
@@ -52,17 +52,21 @@ public class LoginTests {
 
         //Select the cover and cases menu
         driver.findElement(By.xpath("//a[@href='/category/cases-covers-5335']")).click();
-        //Thread.sleep(3000);
+        Thread.sleep(3000);
 
         //Enter search item into searchbox
-       //driver.findElement(By.cssSelector("input#jsSearchInput.fe151_2KRxn")).sendKeys("iPhone 6s case");
-        driver.findElement(By.xpath("//input[@id='jsSearchInput']")).sendKeys("iPhone 6s case");
+       //driver.findElement(By.cssSelector("input#jsSearchInput.f6ed2_25oVd")).sendKeys("iPhone 6s case");
+        driver.findElement(By.cssSelector(".f6ed2_25oVd #jsSearchInput")).sendKeys("iPhone 6s case");
 
         //Press Enter after typing in search text
-        //WebElement search = driver.findElement(By.cssSelector("input#jsSearchInput.fe151_2KRxn"));
-        //search.sendKeys(Keys.ENTER);
-        WebElement search = driver.findElement(By.xpath("//input[@id='jsSearchInput']"));
+        //WebElement search = driver.findElement(By.cssSelector("input#jsSearchInput.f6ed2_25oVd"));
+        WebElement search = driver.findElement(By.cssSelector(".f6ed2_25oVd #jsSearchInput"));
         search.sendKeys(Keys.ENTER);
+        Thread.sleep(5000);
+
+        //Click on the item
+        //driver.findElement(By.xpath("//h3[text() = 'iPhone 6s Case']")).click();
+        driver.findElement(By.xpath("(//button[@class='_0a08a_3czMG' and text() = 'Add To Cart'])[3]")).click();
 
 
     }
