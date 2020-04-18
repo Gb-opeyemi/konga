@@ -52,10 +52,10 @@ public class LoginTests {
 
         //Select the cover and cases menu
         driver.findElement(By.xpath("//a[@href='/category/cases-covers-5335']")).click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
         //Enter search item into searchbox
-       //driver.findElement(By.cssSelector("input#jsSearchInput.f6ed2_25oVd")).sendKeys("iPhone 6s case");
+        //driver.findElement(By.cssSelector("input#jsSearchInput.f6ed2_25oVd")).sendKeys("iPhone 6s case");
         driver.findElement(By.cssSelector(".f6ed2_25oVd #jsSearchInput")).sendKeys("iPhone 6s case");
 
         //Press Enter after typing in search text
@@ -64,13 +64,55 @@ public class LoginTests {
         search.sendKeys(Keys.ENTER);
         Thread.sleep(5000);
 
-        //Click on the item
+        //Click on the Add to cart button
         //driver.findElement(By.xpath("//h3[text() = 'iPhone 6s Case']")).click();
-        driver.findElement(By.xpath("(//button[@class='_0a08a_3czMG' and text() = 'Add To Cart'])[3]")).click();
+        driver.findElement(By.xpath("(//button[@class='_0a08a_3czMG' and text() = 'Add To Cart'])[2]")).click();
+
+        //Click on the My Cart menu button
+        driver.findElement(By.xpath("//a[@class='_79484_1sLEt _7ad32_SD12Y _16536_xxIKG' and @href='/cart/overview']")).click();
+
+        //Increase the number of item to four
+        WebElement item = driver.findElement(By.xpath("//div[@class='a03ba_1Zj-T']"));
+        int itemno = Integer.parseInt(item.getText());
+        WebElement increase = driver.findElement(By.xpath("//button[@name='increment']"));
+        //int count = 4;
+       // if (itemno != count){
+       //     increase.click();
+        //    break;
+        //}
+        while (itemno < 4){
+           increase.click();
+        }
+        Thread.sleep(5000);
+
+        //Click on Checkout
+        driver.findElement(By.xpath("//button[@class='_0a08a_3czMG' and text() = 'Checkout']")).click();
+        Thread.sleep(7000);
+
+        //Select the PAY NOW Option
+        driver.findElement(By.xpath("//button[@class = '_0a08a_3czMG _4a291_2cOtr' and @name = 'selectPaymentMethod']")).click();
+
+        //Click on the Continue to Payment button
+        driver.findElement(By.xpath("//button[@class = '_0a08a_3czMG' and @name='placeOrder']")).click();
+
+        //Click on the card option
+        driver.findElement(By.xpath("//button[@class ='dashboard-card__button Card']"));
+
+        //Enter the card number
+        driver.findElement(By.xpath("//button[@class = 'card-number input_class' and @id = 'card-number']")).sendKeys("5061051212338663244");
+
+        //Enter Expiry Date
+        driver.findElement(By.xpath("//button[@class = 'date input_class' and @id = 'expiry']")).sendKeys("0520");
+
+        //Enter CVV
+        driver.findElement(By.xpath("//button[@class = 'cvv input_class' and @id = 'cvv']")).sendKeys("987");
+
+
+
+
 
 
     }
-
     public static void main(String args[]) throws InterruptedException {
         LoginTests test = new LoginTests();
         test.setUp();

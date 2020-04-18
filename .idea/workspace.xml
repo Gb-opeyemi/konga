@@ -30,7 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PostmanLoginAutomation" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -71,22 +71,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1587234436439">
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1587239490698">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587234436439" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1587234436438">
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587239490698" />
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1587252441750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587234436438" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1587234436438">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587252441750" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1587252441726">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587234436438" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1587234436438">
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587252441726" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1587252441726">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587234436438" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587252441726" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1587252441727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587252441727" />
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1587232716719">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
