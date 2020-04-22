@@ -36,10 +36,10 @@ public class LoginTests {
         driver.findElement(By.linkText("Login / Signup")).click();
 
         //Enter username
-        driver.findElement(By.id("username")).sendKeys("henryt1455@gmail.com");
+        driver.findElement(By.id("username")).sendKeys("xxxxxxx");
 
         //Enter password
-        driver.findElement(By.id("password")).sendKeys("7FE@fake");
+        driver.findElement(By.id("password")).sendKeys("xxxxxx");
 
         //Click on Login
         driver.findElement(By.xpath("//button[text() = 'Login']")).click();
