@@ -1,4 +1,4 @@
-package Login;
+package Order;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -9,10 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginTests {
+public class OrderTests {
 
     private WebDriver driver;
 
+    @BeforeTest
     public void setUp() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
@@ -47,6 +48,7 @@ public class LoginTests {
         //Wait, so the next operation won't happen so fast
         Thread.sleep(5000);
 
+        @Test
         //Mouseover Phones and Tablet Category
         WebElement Phone = driver.findElement(By.linkText("Phones and Tablets"));
         actions.moveToElement(Phone).perform();
@@ -64,7 +66,7 @@ public class LoginTests {
         Thread.sleep(5000);
 
         //Click on the Add to cart button
-        driver.findElement(By.xpath("(//button[@class='_0a08a_3czMG' and text() = 'Add To Cart'])[2]")).click();
+        driver.findElement(By.xpath("(//button[@class='_0a08a_3czMG' and text() = 'Add To Cart'])[3]")).click();
 
         //Click on the My Cart menu button
         driver.findElement(By.xpath("//a[@class='_79484_1sLEt _7ad32_SD12Y _16536_xxIKG' and @href='/cart/overview']")).click();
@@ -119,15 +121,18 @@ public class LoginTests {
         driver.findElement(By.xpath("//button[@class='keypadbutton pin-keypad__button' and text() = '0']")).click();
         driver.findElement(By.xpath("//button[@class='keypadbutton pin-keypad__button' and text() = '1']")).click();
 
+        @AfterTest
         //Print error message of card number field
         WebElement error = driver.findElement(By.xpath("//label[@id='card-number_unhappy' and text() = 'Invalid card number']"));
         String errorPrint = error.getText();
         System.out.println(errorPrint);
+        Thread.sleep(5000);
+        driver.quit();
 
     }
 
     public static void main(String args[]) throws InterruptedException {
-        LoginTests test = new LoginTests();
+        OrderTests test = new OrderTests();
         test.setUp();
     }
 

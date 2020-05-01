@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60c836b2-586b-4f11-a3a3-8c5848cbc204" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -29,14 +30,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PostmanLoginAutomation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Order" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\workspace\IdeaProjects\konga\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.OrderTests">
     <configuration name="LoginTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Login.LoginTests" />
       <module name="konga" />
@@ -50,8 +54,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Order.OrderTests" />
+      <module name="konga" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OrderTests" />
         <item itemvalue="Application.LoginTests" />
       </list>
     </recent_temporary>
@@ -70,29 +88,29 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1587239490698">
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1588367989230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587239490698" />
-    <state width="1286" height="159" key="GridCell.Tab.0.bottom" timestamp="1587314339211">
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588367989230" />
+    <state width="1286" height="159" key="GridCell.Tab.0.bottom" timestamp="1588371241912">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="159" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587314339211" />
-    <state width="1286" height="159" key="GridCell.Tab.0.center" timestamp="1587314339211">
+    <state width="1286" height="159" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588371241912" />
+    <state width="1286" height="159" key="GridCell.Tab.0.center" timestamp="1588371241912">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="159" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587314339211" />
-    <state width="1286" height="159" key="GridCell.Tab.0.left" timestamp="1587314339211">
+    <state width="1286" height="159" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588371241912" />
+    <state width="1286" height="159" key="GridCell.Tab.0.left" timestamp="1588371241912">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="159" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587314339211" />
-    <state width="1286" height="159" key="GridCell.Tab.0.right" timestamp="1587314339211">
+    <state width="1286" height="159" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588371241912" />
+    <state width="1286" height="159" key="GridCell.Tab.0.right" timestamp="1588371241912">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="159" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587314339211" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1587301824945">
+    <state width="1286" height="159" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588371241912" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1588367543950">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587301824945" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588367543950" />
   </component>
 </project>
