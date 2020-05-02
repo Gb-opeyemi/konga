@@ -92,10 +92,10 @@ public class OrderTests {
 
         //Select the PAY NOW Option
         driver.findElement(By.xpath("//button[@class = '_0a08a_3czMG _4a291_2cOtr' and @name = 'selectPaymentMethod']")).click();
-
+ Thread.sleep(7000);
         //Click on the Continue to Payment button
         driver.findElement(By.xpath("//button[@class = '_0a08a_3czMG' and @name='placeOrder']")).click();
-
+ Thread.sleep(7000);
         //Select iframe that comes up for payment
         WebElement iframe = driver.findElement(By.xpath("//iframe[@id='kpg-frame-component']"));
         driver.switchTo().frame(iframe);
